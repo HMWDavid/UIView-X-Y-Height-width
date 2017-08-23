@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView+YRExtension.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"\n X = %f",self.view.x);
+    NSLog(@"\n Y = %f",self.view.y);
+    NSLog(@"\n Width = %f",self.view.Width);
+    NSLog(@"\n Height = %f",self.view.Height);
+    NSLog(@"\n origin = %@",NSStringFromCGPoint(self.view.origin));
+    NSLog(@"\n size = %@",NSStringFromCGSize(self.view.size));
+    NSLog(@"\n centerX = %f",self.view.centerX);
+    NSLog(@"\n centerY = %f",self.view.centerY);
+    NSLog(@"\n Y+Height = %f",self.view.bootom);
+    NSLog(@"\n X+width = %f",self.view.right);
+
 }
 
 
